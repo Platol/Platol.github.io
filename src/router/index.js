@@ -8,6 +8,9 @@ const routes = [
         path: '/',
         name: '',
         component: null
+    }, {
+        path: '/Hello',
+        component: () => import('../posts/Hello.vue')
     }
 ]
 
