@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ff857551103b9e23415234589dd7469d.js"
+  "/precache-manifest.b269a515082651628ea6d2a00279a5dd.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "xo69.github.io"});
