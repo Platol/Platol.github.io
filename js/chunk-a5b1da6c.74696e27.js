@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-a5b1da6c"],{ab11:function(t,n,e){},bb51:function(t,n,e){"use strict";e.r(n);var a=function(){var t=this,n=t.$createElement,e=t._self._c||n;return e("div",{attrs:{id:"home"}},[e("ul",[e("li",[e("router-link",{attrs:{to:"/《巨婴国》精选"}},[t._v("《巨婴国》精选")])],1)])])},c=[],r=(e("f5b7"),e("2877")),u={},i=Object(r["a"])(u,a,c,!1,null,"c4d1dc5e",null);n["default"]=i.exports},f5b7:function(t,n,e){"use strict";var a=e("ab11"),c=e.n(a);c.a}}]);
+//# sourceMappingURL=chunk-a5b1da6c.74696e27.js.map
