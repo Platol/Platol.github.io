@@ -26,5 +26,5 @@
 </template>
 
 <style lang="stylus" scoped>
-    @import './post.styl'
+    @import '../post.styl'
 </style>
