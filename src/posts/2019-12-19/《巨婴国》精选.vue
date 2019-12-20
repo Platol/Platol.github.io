@@ -1,7 +1,7 @@
 <template>
     <div class="post">
         <h1>《巨婴国》精选</h1>
-        <div class="what">
+        <div class="date-and-tags">
             <span>日期：2019年12月19日</span>
             <span>
                 标签：<router-link to="/xxx">巨婴</router-link>，<router-link to="/yyy">文化</router-link>
@@ -10,11 +10,7 @@
 
         <div class="over">
             <div class="pic">
-                <!-- <img src="../../assets/《巨婴国》封面.jpg" title="《巨婴国》封面" width="200"> -->
-                <vue-picture-swipe
-                    :items="items"
-                    :options="options"
-                ></vue-picture-swipe>
+                <img src="../../assets/《巨婴国》封面.jpg" preview="1" title="《巨婴国》封面" width="200">
             </div>
             <aside>
                 <p>此书在大陆已被禁，看来是说到了某些人（或许是绝大多数人）的痛处、深处和软处，就好像揭掉他们的底裤一样，所以他们宁愿选择不去听！貌似心理学著作，实则暗藏玄机，如果对中国历史和政治了解的人自会明白！</p>
@@ -185,31 +181,12 @@
 </template>
 
 <script>
-import VuePictureSwipe from 'vue-picture-swipe'
-
-import imgBig from '../../assets/《巨婴国》封面.jpg'
-import imgSmall from '../../assets/《巨婴国》封面（小）.jpg'
 
 export default {
     data() {
         return {
-            items: [{
-                src: imgBig,
-                thumbnail: imgSmall,
-                w: 768,
-                h: 1024,
-            }],
-            options: {
-                closeEl: true,
-                shareEl: false,
-                fullscreenEl: false,
-                zoomEl: false,
-                arrowEl: false
-            }
+            
         }
-    },
-    components: {
-        VuePictureSwipe
     }
 }
 </script>
@@ -225,8 +202,8 @@ export default {
         padding 8px
 
         div.pic
-            width 200px
-            margin 0 13px -5px -5px
+            margin-right 8px
+            cursor pointer
 
         aside
             p
@@ -246,10 +223,9 @@ export default {
     @media screen and (max-width 767px)
         .over
             flex-direction column
-            align-items center
 
             div.pic
-                margin-right 5px
+                margin-right 0
             aside
                 margin-top 20px
                 
