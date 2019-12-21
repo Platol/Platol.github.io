@@ -4,7 +4,11 @@
         <div class="date-and-tags">
             <span>日期：2019年12月19日</span>
             <span>
-                标签：<router-link to="/xxx">巨婴</router-link>，<router-link to="/yyy">文化</router-link>
+                标签：
+                <router-link to="">巨婴</router-link>，
+                <router-link to="">文化</router-link>，
+                <router-link to="">原创</router-link>，
+                <router-link to="">读书</router-link>
             </span>
         </div>
 
@@ -19,7 +23,7 @@
                     婴者，子也。<br/>
                     巨婴者，天子也；<br/>
                     天子者，皇帝也！<br/>
-                    <strong>—— 顿悟！</strong>
+                    <strong>—— 顿悟！</strong><span> 👍佩服作者的构词能力</span>
                 </div>
             </aside>
         </div>
@@ -172,11 +176,6 @@
         <p>什么叫过日子呢？概括说来，就是，遵守农村的一套规范，在这套规范下过得最像样，就是典范了。譬如，大家都结婚，所以你也要结婚，而且要结得最像样；大家都大办丧礼，你也要大办，还要办得最隆重；大家儿子大了都盖房子，你也要这样做，而且要盖得最气派……</p>
         <p>总之，就是追求大家都在追求的，而且要比别人更像样一些。说追求还不对，追求还算一种境界，准确的说法是“做”，做大家都在做的，但做得比别人更像样一些。甚至像样这个词也值得商榷，因为像样不像样，没有什么客观标准，关键是邻里乡亲怎么看。
         </p>
-
-
-
-
-
     </div>
 </template>
 
@@ -219,6 +218,8 @@ export default {
 
                 strong
                     line-height 3
+                span
+                    font-size 14px
 
     @media screen and (max-width 767px)
         .over
