@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a160481e1f3196ff1662",
-    "url": "/css/app.dd962087.css"
+    "revision": "ed37e3cad9317b552d20",
+    "url": "/css/app.19f20658.css"
   },
   {
-    "revision": "b3983a9111c641d8e4ba",
-    "url": "/css/chunk-07fbe8d3.972258f7.css"
+    "revision": "33b756705bd5648b2b65",
+    "url": "/css/chunk-06145f7e.f7cd95d8.css"
   },
   {
-    "revision": "8997f1eaa9f618e2a6bf",
-    "url": "/css/chunk-77981984.24ec8203.css"
+    "revision": "5688149fa28b494182ce",
+    "url": "/css/chunk-95a718ce.8f1d2dd9.css"
   },
   {
     "revision": "0093ceb6373bbb0a1097",
@@ -24,27 +24,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/《巨婴国》封面.88d2fe7c.jpg"
   },
   {
-    "revision": "69358e41d16c6b525ae766d27b0a2b0e",
+    "revision": "155b1b384684541a073502b161a6f4af",
     "url": "/index.html"
   },
   {
-    "revision": "a160481e1f3196ff1662",
-    "url": "/js/app.a34fe3ab.js"
+    "revision": "ed37e3cad9317b552d20",
+    "url": "/js/app.c403f618.js"
   },
   {
-    "revision": "b3983a9111c641d8e4ba",
-    "url": "/js/chunk-07fbe8d3.96693bfc.js"
+    "revision": "33b756705bd5648b2b65",
+    "url": "/js/chunk-06145f7e.97fef06f.js"
   },
   {
-    "revision": "8997f1eaa9f618e2a6bf",
-    "url": "/js/chunk-77981984.1444568e.js"
+    "revision": "5688149fa28b494182ce",
+    "url": "/js/chunk-95a718ce.de1af9d7.js"
   },
   {
     "revision": "0093ceb6373bbb0a1097",
     "url": "/js/chunk-vendors.d76fb6ae.js"
   },
   {
-    "revision": "248c33e29d6ae57f1f2865eac4c7f6b8",
+    "revision": "3799efd3e41440346ddf1532b7d3a4ba",
     "url": "/manifest.json"
   },
   {
