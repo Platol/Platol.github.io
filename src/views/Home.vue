@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import posts from '../posts/posts.json'
+import posts from '../posts.json'
 
 
 export default {
@@ -60,20 +60,18 @@ export default {
         h2
             color #111
             line-height 44px
-            font-weight normal
         h3
             font-size 16px
             color #222
             line-height 28px
             margin 4px 0
-            font-weight normal
-            // font-style italic
         p
             font-size 14px
             color #444
             line-height 24px
             background-color #fafafa
-            padding 16px
+            border 1px solid #eee
+            padding 12px
             text-indent 2em
             &:first-letter
                 font-size 20px
@@ -105,6 +103,6 @@ export default {
     
     @media screen and (max-width 767px)
         h2, h3, p
-            pointer-events none     // 阻止移动端点击触发 :hover
+            pointer-events none     // 阻止移动端点击时触发 :hover
 
 </style>

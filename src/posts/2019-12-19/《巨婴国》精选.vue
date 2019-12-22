@@ -7,7 +7,6 @@
                 标签：
                 <router-link to="">巨婴</router-link>，
                 <router-link to="">文化</router-link>，
-                <router-link to="">原创</router-link>，
                 <router-link to="">读书</router-link>
             </span>
         </div>

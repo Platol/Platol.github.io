@@ -1,7 +1,9 @@
 <template>
     <div id="app">
         <!-- <header></header> -->
-        <router-view />
+        <div id="app-container">
+            <router-view />
+        </div>
         
 </div>
 
@@ -29,16 +31,23 @@ export default {
 
 <style lang="stylus" scoped>
     #app
-        min-height 100%
-        padding 16px
-        box-sizing border-box
-        background-color #fff
-        // border 1px solid #eee
+        // background-color #fff
+        // min-height 100%
+
+        header
+            height 48px
+            background #000
+            position sticky
+            top 0
 
     @media screen and (min-width 768px)
-        #app
+        #app-container
             width 720px
             margin 0 auto
+            padding 16px 0
+    @media screen and (max-width 767px)
+        #app-container
+            padding 16px
             
     
 </style>
