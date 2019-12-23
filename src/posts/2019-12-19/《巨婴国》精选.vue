@@ -1,13 +1,18 @@
 <template>
     <div class="post">
-        <h1>《巨婴国》精选</h1>
+        <h1>{{post.title}}</h1>
+        <h4 class="sub-title">{{post.subTitle}}</h4>
         <div class="date-and-tags">
-            <span>日期：2019年12月19日</span>
+            <span>日期：{{post.date}}</span>
             <span>
                 标签：
-                <router-link to="">巨婴</router-link>，
-                <router-link to="">文化</router-link>，
-                <router-link to="">读书</router-link>
+                <span
+                    v-for="(tag, idx) in post.tags"
+                    :key="idx"
+                >
+                    <span v-if="idx">，</span>
+                    <router-link to="">{{tag}}</router-link>
+                </span>
             </span>
         </div>
 
@@ -179,11 +184,14 @@
 </template>
 
 <script>
+import posts from '../../posts.json'
+
+
 
 export default {
     data() {
         return {
-            
+            post: posts.filter(item => item.title == '《巨婴国》精选')[0]
         }
     }
 }
@@ -206,9 +214,9 @@ export default {
         aside
             p
                 font-size 14px
-                line-height 24px
+                line-height 28px
                 margin-top 0
-                margin-bottom 8px
+                margin 8px 0
             div
                 text-align center
                 line-height 1.6
