@@ -1,21 +1,12 @@
 <template>
     <div class="post">
-        <h1>{{post.title}}</h1>
-        <h4 class="sub-title">{{post.subTitle}}</h4>
-        <div class="date-and-tags">
-            <span>日期：{{post.date}}</span>
-            <span>
-                标签：
-                <span
-                    v-for="(tag, idx) in post.tags"
-                    :key="idx"
-                >
-                    <span v-if="idx">，</span>
-                    <router-link to="">{{tag}}</router-link>
-                </span>
-            </span>
-        </div>
-
+        <post-header
+            :title="post.title"
+            :subTitle="post.subTitle"
+            :date="post.date"
+            :tags="post.tags"
+        ></post-header>
+        
         <div class="over">
             <div class="pic">
                 <img src="../../assets/《巨婴国》封面.jpg" preview="1" title="《巨婴国》封面" width="200">
@@ -185,7 +176,7 @@
 
 <script>
 import posts from '../../posts.json'
-
+import PostHeader from '../../components/PostHeader'
 
 
 export default {
@@ -193,6 +184,9 @@ export default {
         return {
             post: posts.filter(item => item.title == '《巨婴国》精选')[0]
         }
+    },
+    components: {
+        PostHeader
     }
 }
 </script>
@@ -214,17 +208,15 @@ export default {
         aside
             p
                 font-size 14px
-                line-height 28px
-                margin-top 0
                 margin 8px 0
             div
                 text-align center
-                line-height 1.6
+                line-height 26px
                 background-color #fafafa
                 padding-top 12px
 
                 strong
-                    line-height 3
+                    line-height 48px
                 span
                     font-size 14px
 
@@ -235,6 +227,6 @@ export default {
             div.pic
                 margin-right 0
             aside
-                margin-top 20px
+                margin-top 8px
                 
 </style>
