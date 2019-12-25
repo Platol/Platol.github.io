@@ -4,22 +4,20 @@
         <h4 class="sub-title">{{subTitle}}</h4>
         <div class="date-and-tags">
             <span>日期： {{date}}</span>
-            <span>标签：
-                <span
-                    v-for="(tag, idx) in tags"
-                    :key="idx"
-                >
-                    <span v-if="idx">，</span>
-                    <router-link to="">{{tag}}</router-link>
-                </span>
-            </span>
+            <tags :tags="tags"></tags>
         </div>
     </div>
 </template>
 
 <script>
+import Tags from './Tags'
+
+
 export default {
-    props: ['title', 'subTitle', 'date', 'tags']
+    props: ['title', 'subTitle', 'date', 'tags'],
+    components: {
+        Tags
+    }
 }
 </script>
 
@@ -34,6 +32,7 @@ export default {
         font-weight bold
         line-height 1
         margin 0
+        text-align right
 
     .date-and-tags
         display flex
@@ -45,6 +44,4 @@ export default {
             line-height 24px
             font-size 14px
 
-    a:hover
-        text-decoration underline
 </style>

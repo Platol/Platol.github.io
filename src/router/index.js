@@ -10,6 +10,9 @@ const routes = [
     }, {
         path: '/《巨婴国》精选',
         component: () => import('../posts/2019-12-19/《巨婴国》精选')
+    }, {
+        path: '/《倩女幽魂Ⅱ》讽刺对白',
+        component: () => import('../posts/2019-12-25/《倩女幽魂Ⅱ》讽刺对白')
     }
 ]
 

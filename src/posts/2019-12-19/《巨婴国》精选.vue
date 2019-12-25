@@ -222,6 +222,9 @@ export default {
                 span
                     font-size 14px
 
+    p
+        text-indent 2em
+
     @media screen and (max-width 767px)
         .over
             flex-direction column

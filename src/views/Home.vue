@@ -11,17 +11,8 @@
                     <p v-if="item.summary">{{item.summary}}</p>
                 </router-link>
                 <div class="date-and-tags">
-                    <span>{{item.date}} 发布</span>
-                    <strong>
-                        标签：
-                        <span
-                            v-for="(tag, idx) in item.tags"
-                            :key="idx"
-                        >
-                            <i v-if="idx">，</i>
-                            <b>{{tag}}</b>
-                        </span>
-                    </strong>
+                    <span><i>{{item.date}} 发布</i></span>
+                    <tags :tags="item.tags"></tags>
                 </div>
             </li>
         </ul>
@@ -30,7 +21,7 @@
 
 <script>
 import posts from '../posts.json'
-
+import Tags from '../components/Tags'
 
 export default {
     data() {
@@ -40,6 +31,9 @@ export default {
                 '👍', '💎', '⚡', '😋', '🚀', '😍', '👌', '👉', '💪', '🍉', '🚩', '🎨'
             ],
         }
+    },
+    components: {
+        Tags
     }
 }
 </script>
@@ -82,23 +76,9 @@ export default {
         margin-top 8px
         font-size 12px
 
-        &>span
-            font-style italic
+        &>span:nth-child(1)
             font-family "Times New Roman"
             margin-right 20px
-        strong
-            font-weight normal
-
-            span
-                i
-                    font-style normal
-                b
-                    font-weight normal
-                    color MidnightBlue
-                    cursor pointer
-                    &:hover
-                        text-decoration underline
-                        color blue
 
     
     @media screen and (max-width 767px)
