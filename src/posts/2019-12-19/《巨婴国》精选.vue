@@ -9,7 +9,7 @@
         
         <div class="over">
             <div class="pic">
-                <img src="../../assets/《巨婴国》封面.jpg" preview="1" title="《巨婴国》封面" width="200">
+                <img src="../../assets/《巨婴国》封面.jpg" preview="1" title="《巨婴国》封面" width="200" height="266">
             </div>
             <aside>
                 <p>此书在大陆已被禁，看来是说到了某些人（或许是绝大多数人）的痛处、深处和软处，就好像揭掉他们的底裤一样，所以他们宁愿选择不去听！貌似心理学著作，实则暗藏玄机，如果对中国历史和政治了解的人自会明白！</p>
@@ -206,17 +206,19 @@ export default {
             cursor pointer
 
         aside
+            
             p
                 font-size 14px
-                margin 8px 0
+                padding 12px 0
+                margin 0
             div
                 text-align center
+                border-top 1px dashed #ddd
                 line-height 26px
-                background-color #fafafa
-                padding-top 12px
+                padding-top 16px
 
                 strong
-                    line-height 48px
+                    line-height 44px
                 span
                     font-size 14px
 
@@ -226,7 +228,5 @@ export default {
 
             div.pic
                 margin-right 0
-            aside
-                margin-top 8px
                 
 </style>

@@ -69,8 +69,8 @@ export default {
             font-size 14px
             color #444
             line-height 24px
-            background-color #fafafa
-            border 1px solid #eee
+            background-color #fff8ed
+            border 1px solid #ffe5bb
             padding 12px
             text-indent 2em
             &:first-letter

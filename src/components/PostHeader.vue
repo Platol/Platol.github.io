@@ -44,4 +44,7 @@ export default {
         span
             line-height 24px
             font-size 14px
+
+    a:hover
+        text-decoration underline
 </style>
