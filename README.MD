@@ -1,1 +1,1 @@
-# Platol.GitHub.io
+# platol.github.io
