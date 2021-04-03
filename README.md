@@ -1,4 +1,4 @@
-# xo69.github.io
+# platol.github.io
 
 ## Project setup
 ```
