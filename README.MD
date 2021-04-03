@@ -1,1 +1,1 @@
-# BLOG => Platol.GitHub.io
+# Platol.GitHub.io
